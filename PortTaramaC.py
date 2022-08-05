@@ -6,7 +6,7 @@ class porttaramaCUSTOM:
         try :
             print(Fore.GREEN)
             site = input(Fore.GREEN + "Ip Adresi => ")
-            portsayisi = input(Fore.GREEN + "Kaç Port Tarasın [Max : 65535] = >")
+            portsayisi = int(input(Fore.GREEN + "Kaç Port Tarasın [Max : 65535] = >"))
             hedef = socket.gethostbyname(site)
 
             print(Fore.GREEN + "-==#==-" * 5)
